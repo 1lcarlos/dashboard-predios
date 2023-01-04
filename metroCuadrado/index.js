@@ -7,7 +7,7 @@ const html = await res.text();
 
 const $ = cheerio.load(html);
 $('table tbody tr').each((index,el) => {
-    const rawTitulo = $(el).find('fs-table-text_3').text();
+    const rawTitulo = $(el).find('.fs-table-text_3').text();
 
 
     console.log({rawTitulo});
